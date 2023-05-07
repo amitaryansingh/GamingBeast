@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="/css_file/styleWinLose.css">
 </head>
 
-<body>
+<body onload="myFunction()" >
+    <div id="loading"></div>
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Gaming<span>Beast</span></a></div>
@@ -86,6 +87,11 @@
                 }
             }
         })
+
+        var preloader = document.getElementById("loading");
+        function myFunction(){
+            preloader.style.display = 'none';
+        };
     </script>
 </body>
 

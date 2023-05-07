@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css_file/style.css">
 </head>
 
-<body>
+<body onload="myFunction()">
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Gaming<span>Beast</span></a></div>
@@ -48,6 +48,7 @@
                 <img src="/image/pad33.png" alt="pad" width="100%" height="auto">
             </div>
         </div>
+        <div id="loading"></div>
         <footer>
             <p class="heroP" id="content">All Rights &copy; Resevered By Aditya</p>
         </footer>
@@ -56,6 +57,10 @@
                 $('.navbar .menu').toggleClass("active");
                 $('.menu-btn i').toggleClass("active");
             });
+        var preloader = document.getElementById("loading");
+        function myFunction(){
+            preloader.style.display = 'none';
+        };
         </script>
 </body>
 

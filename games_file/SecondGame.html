@@ -6,7 +6,8 @@
         <title>SpaceShooter</title>
         <link rel="stylesheet" href="css_file\SecondGameStyle.css">
     </head>
-    <body>
+    <body onload="myFunction()">
+      <div id="loading"></div>
         <canvas></canvas>
         <script>
             // Created by harsh
@@ -243,6 +244,11 @@ window.onload = function(){
     animate();
     }startGame();//startGame function starts/restarts game
     }; //end of onload func
+
+    var preloader = document.getElementById("loading");
+        function myFunction(){
+            preloader.style.display = 'none';
+        };
         </script>
     </body>
 </html>
